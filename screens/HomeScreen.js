@@ -1,15 +1,29 @@
 import * as React from "react";
-import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { useState, useEffect } from 'react';
 
-export default function App({navigation}) {
+const functionList = require('../components/FunctionList');
 
+export default function App({ navigation }) {
+	function OnSelectFunction(item){
+		console.log('entered menu', item)
+		navigation.navigate(item.name)
+	}
 
-  return (
-      <View style={styles.container}>
-
-      </View>
-  );
+	return (
+		<View style={styles.container}>
+			<ScrollView>
+				{functionList.FUNCTION_LIST.map(item => (
+					<TouchableOpacity
+						key={item.index}
+						onPress={event => OnSelectFunction(item)}
+					>
+						<Text style={{ color: 'black', fontSize: 16, paddingLeft: 20, paddingTop: 16 }}>{item.name}</Text>
+					</TouchableOpacity>
+				))}
+			</ScrollView>
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({
