@@ -62,7 +62,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './screens/HomeScreen'
-import ClassificationScreen from './screens/ClassificationScreen'
+import ImageClassificationScreen from './screens/ImageClassificationScreen'
+import StreemClassificationScreen from './screens/StreemClassificationScreen'
 import AboutScreen from './screens/AboutScreen'
 // import WindScreen from './screens/WindScreen'
 
@@ -73,7 +74,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
-        <Stack.Screen name="Classification" component={ClassificationScreen}/>
+        <Stack.Screen name="Image Classification" component={ImageClassificationScreen}/>
+        <Stack.Screen name="Streem Classification" component={StreemClassificationScreen}/>
         {/* <Stack.Screen name="Temperature" component={TempScreen} options={({ route }) => ({ title: 'Temperature' })}/> */}
         <Stack.Screen name="About" component={AboutScreen}/>
       </Stack.Navigator>

@@ -33,7 +33,7 @@ function ButtonView(props) {
   )
 }
 
-export default function ClassificationScreen({ navigation }) {
+export default function StreemClassificationScreen({ navigation }) {
   const [model, setModel] = useState(null)
   const [img, setImg] = useState(null)
   const [prediction, setPrediction] = useState(null)
@@ -73,7 +73,7 @@ export default function ClassificationScreen({ navigation }) {
 
   async function PickerImage() {
     try {
-      const response = await ImagePicker.launchImageLibraryAsync({
+      const response = await ImagePicker.launchCameraAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         allowsEditing: true,
         aspect: [4, 4],
@@ -129,7 +129,7 @@ export default function ClassificationScreen({ navigation }) {
 
   return (
     <View style={styles.container}>      
-      <ButtonView onPress={PickerImage} title="Select Image from local storage"></ButtonView>      
+      <ButtonView onPress={PickerImage} title="Select Image from camera"></ButtonView>
       {img && <Image source={{ uri: img.uri }} style={styles.image} />}
       {prediction && <PredictionView predict={prediction}></PredictionView>}
       {loading && <LoadingView></LoadingView>}

@@ -15,10 +15,11 @@ export default function App({ navigation }) {
 			<ScrollView>
 				{functionList.FUNCTION_LIST.map(item => (
 					<TouchableOpacity
+            style={styles.button}
 						key={item.index}
 						onPress={event => OnSelectFunction(item)}
 					>
-						<Text style={{ color: 'black', fontSize: 16, paddingLeft: 20, paddingTop: 16 }}>{item.name}</Text>
+						<Text style={styles.buttonText}>{item.name}</Text>
 					</TouchableOpacity>
 				))}
 			</ScrollView>
@@ -29,22 +30,24 @@ export default function App({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop:28,
+    paddingTop:40,
     flexDirection: 'column',
     justifyContent: 'space-between',
   },
-  title:{
-    flex:2,
-    // backgroundColor:'red'
+  button: {
+    elevation: 8,
+    marginHorizontal: 1,
+    marginVertical : 5,
+    padding: 3,
+    backgroundColor: "#009688",
+    borderRadius: 10,
   },
-  body:{
-    flex:3,
-    // backgroundColor:'blue'
+  buttonText:{
+    fontSize: 24,
+    fontWeight: '600',
+    margin: 5,
+    alignSelf: 'stretch',
+    color: '#ffffff'
   },
-  footer:{
-    flex:2,
-    flexDirection: 'row',
-    // backgroundColor:'green'
-  }
 
 });
