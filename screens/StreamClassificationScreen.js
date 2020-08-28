@@ -33,7 +33,7 @@ function ButtonView(props) {
   )
 }
 
-export default function StreemClassificationScreen({ navigation }) {
+export default function StreamClassificationScreen({ navigation }) {
   const [model, setModel] = useState(null)
   const [img, setImg] = useState(null)
   const [prediction, setPrediction] = useState(null)
