@@ -1,4 +1,4 @@
-# My Universal React Project
+# React-Native for Tensorflow
 
 <p>
   <!-- iOS -->
@@ -25,17 +25,29 @@
   - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
   - Web: Any web browser
 
-## Adding Native Code
+## Main Screen
 
-This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/mainmenu.png" />
 
-- Run `yarn eject` to create the native projects.
-- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
 
-## Publishing
+This project can classify images from local storages or camera.
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.io/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.io/distribution/publishing-websites/).
+## Image Classification for images from local storage
+
+<div class="row">
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification1.png" />
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification2.png" />
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification3.png" />
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification4.png" />
+</div>
+
+## Image Classification for images from camera
+
+<div class="row">
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification1.png" />
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification2.png" />
+<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification3.png" />
+</div>
 
 ## 📝 Notes
 
