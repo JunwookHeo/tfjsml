@@ -35,18 +35,24 @@ This project can classify images from local storages or camera.
 ## Image Classification for images from local storage
 
 <div class="row">
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification1.png" />
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification2.png" />
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification3.png" />
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification4.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification1.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification2.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification3.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ImageClassification4.png" />
 </div>
 
 ## Image Classification for images from camera
 
 <div class="row">
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification1.png" />
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification2.png" />
-<img alt="Main Screen" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification3.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification1.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification2.png" />
+<img alt="Image Classification" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/StreamClassification3.png" />
+</div>
+
+## Object Detection for images from camera
+
+<div class="row">
+<img alt="Object Detection" width=200 src="https://github.com/JunwookHeo/tfjsml/blob/master/Doc/ObjectDetection1.png" />
 </div>
 
 ## 📝 Notes
