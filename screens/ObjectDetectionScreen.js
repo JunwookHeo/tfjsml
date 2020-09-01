@@ -67,7 +67,7 @@ export default function ObjectDetectionScreen({ navigation }) {
     if (img) {
       setLoading(true)
       setPrediction(null)
-      doClassification()
+      doDetection()
     }
 
   }, [img]);
@@ -97,7 +97,7 @@ export default function ObjectDetectionScreen({ navigation }) {
     }
   };
 
-  async function doClassification() {
+  async function doDetection() {
     console.log('press')
 
     if (model) {

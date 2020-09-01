@@ -65,6 +65,7 @@ import HomeScreen from './screens/HomeScreen'
 import ImageClassificationScreen from './screens/ImageClassificationScreen'
 import StreamClassificationScreen from './screens/StreamClassificationScreen'
 import ObjectDetectionScreen from './screens/ObjectDetectionScreen'
+import ObjectDetectionRTScreen from './screens/ObjectDetectionRTScreen'
 import AboutScreen from './screens/AboutScreen'
 
 const Stack = createStackNavigator();
@@ -77,6 +78,7 @@ export default function App() {
         <Stack.Screen name="Image Classification" component={ImageClassificationScreen}/>
         <Stack.Screen name="Stream Classification" component={StreamClassificationScreen}/>
         <Stack.Screen name="Object Detection" component={ObjectDetectionScreen}/>
+        <Stack.Screen name="Object Detection Real Time" component={ObjectDetectionRTScreen}/>
         {/* <Stack.Screen name="Temperature" component={TempScreen} options={({ route }) => ({ title: 'Temperature' })}/> */}
         <Stack.Screen name="About" component={AboutScreen}/>
       </Stack.Navigator>
